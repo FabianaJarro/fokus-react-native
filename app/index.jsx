@@ -3,17 +3,28 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Index() {
   return (
     <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      style={styles.container
+      }
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
     </View>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  text: {
+    color: '#FFF'
+  }
+})
+
+
+//o stylesheeet create recebe um objeto de configuração
 
 // View: Funciona como uma <div> do HTML. É um container usado para agrupar, estruturar
 // e aplicar layouts (usando Flexbox por padrão).
