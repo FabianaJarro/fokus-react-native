@@ -1,6 +1,30 @@
 import { Image, StyleSheet, Text, View, Pressable} from "react-native";
 
+
+const pomodoro = [
+    {
+        id: 'focus',
+        initialValue: 25,
+        image: require('./pomodoro.png')
+    },
+    {
+        id: 'short',
+        initialValue: 5,
+        image: require('./short.png')
+    },
+    {
+        id: 'long',
+        initialValue: 15,
+        image: require('./long.png')
+    },
+]
+
+
+
 export default function Index() {
+
+  const [timertype, setTymerType]= useState(pomodoro[1])
+
   return (
     <View
     style={styles.container}
